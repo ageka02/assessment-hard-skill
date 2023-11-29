@@ -298,3 +298,178 @@ if (isset($_SESSION['user'])) {
 ?>
 
 ```
+
+## Level 4
+
+### Structure Query Language (SQL) - Expert / External Certifications (HS)
+
+**SQL injection is** a type of security vulnerability that occurs when an attacker can manipulate queries by injecting malicious code into input fields of an application.
+
+**Security strategies or techniques** that I ever implemented to prevent this securty issue in PHP is using function `mysqli_real_escape_string()`, here an example:
+
+```php
+<?php
+$username = mysqli_real_escape_string($connection, $_POST['username']);
+$sql = "SELECT * FROM users WHERE username = '$username'";
+?>
+```
+
+----
+
+### Data Visualization using Business Intelligence (Fine Bi or Other) - Expert / External Certifications (HS)
+
+FineBI
+
+------
+
+### Mobile Programming (Android/ IOS) - Expert / External Certifications (HS)
+
+**activity_main.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ViewPager to display fragments -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
+
+```
+
+**fragment_one.xml**
+
+```xml
+<!-- fragment_one.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment One"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Add other views or components as needed for Fragment One -->
+
+</LinearLayout>
+
+```
+
+**fragment_two.xml**
+
+```xml
+<!-- fragment_two.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment Two"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Add other views or components as needed for Fragment Two -->
+
+</LinearLayout>
+
+```
+
+**fragment_three.xml**
+
+```xml
+<!-- fragment_three.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment Three"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Add other views or components as needed for Fragment Three -->
+
+</LinearLayout>
+
+```
+
+----
+
+### Frontend Programming (Html/ CSS/ Bootstrap/ CI) - Expert / External Certifications (HS)
+
+To ensure cross browser compatibility firstly make sure we Follow the latest HTML, CSS, and JavaScript standards recommended by the W3C , include `<!DOCTYPE html>` and `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` HTML code. and here another step that is also important:
+- use CSS Reset,
+- do a test on multiple Browsers and Devices,
+- use appropriate vendor prefixes (`-webkit-, -moz-, -ms-, -o-`) for CSS properties.
+- use media queries in css like min-widht and max-widht
+- use relative unit of measurement for component that need to follow screen size / responsive like (`rem, percentage, em`)
+all of I've mentioned can address difference appearance or behavior across various browser
+
+---
+
+### Back-end Programming (PHP/ C#/ C++/ Dart) - Expert / External Certifications (HS)
+
+Optimizing the performance of a slow-running PHP script processing a large amount of data involves identifying bottlenecks and implementing improvements in code efficiency, database interactions, and server configurations. Here are several techniques and tools to enhance PHP code performance:
+
+- Code Profiling
+
+  Use PHP profiling tools like Xdebug or built-in functions (`microtime()`, `memory_get_peak_usage()`) to identify which parts of your code are consuming the most resources (time, memory).
+  example code:
+  ```php
+  <?php
+    $initialMemory = memory_get_peak_usage();
+    
+    //code or process here
+    $largeArray = range(1, 1000000); // Creating a large array
+    
+    // Get memory usage after creating the large array
+    $finalMemory = memory_get_peak_usage();
+    
+    // Calculate memory usage
+    $memoryUsed = $finalMemory - $initialMemory;
+    
+    echo "Memory used: " . number_format($memoryUsed / 1024, 2) . " KB";
+  ?>
+  ```
+
+- Optimize Database Query 
+
+  Use appropriate indexes, optimize SQL queries, and minimize the number of queries executed. Avoid using SELECT * and fetch only required columns.
+
+- Memory management
+  
+  Unset variables or objects that are no longer needed to free up memory (`unset($variable)`). example code:
+  ```php
+  <?php
+    $myVariable = 'Hello, World!';
+    echo "Before unset: $myVariable <br>";
+    
+    // Unset the variable
+    unset($myVariable);
+  ?>
+  ```
+
+- Optimize Loops and Iterations
+  - Use efficient loop constructs (`foreach`, `for`, `while`) and minimize unnecessary iterations.
+  - Break out of loops early if possible, using `break` or `continue` statements.
