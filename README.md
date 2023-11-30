@@ -150,7 +150,62 @@ the result would look like this:
 
 ### Data Visualization using Business Intelligence (Fine Bi or Other) - Intermediate / Internal Training (HS)
  
- FineBI
+ For this example I use datasets of _training record_, here are the datasets examples:
+
+ | name                 | shortname                                             | institution                       | nik      | username             | totaltraining |
+| -------------------- | ----------------------------------------------------- | --------------------------------- | -------- | -------------------- | ------------- |
+| ASSEMBLING           | ARO Buffing                                           | PT. SHOETOWN LIGUNG INDONESIA     | 22111022 | Doni -               | 1             |
+| ASSEMBLING           | Accessories                                           | PT. SHOETOWN LIGUNG INDONESIA     | 22108053 | Rizki Rooby          | 1             |
+| ASSEMBLING           | Accessories                                           | PT. SHOETOWN LIGUNG INDONESIA     | 22109034 | Mesi Marisa          | 1             |
+| ASSEMBLING           | Attaching upper to outsole                            | PT. SHOETOWN LIGUNG INDONESIA     | 22109007 | M Wisnu Pratama      | 1             |
+| ASSEMBLING           | Attaching upper to outsole                            | PT. SHOETOWN LIGUNG INDONESIA     | 22109449 | Ito Santo            | 1             |
+| ASSEMBLING           | Cementing Upper                                       | PT. SHOETOWN LIGUNG INDONESIA     | 22109339 | Faohatun Noor        | 1             |
+| ASSEMBLING           | Cementing Upper                                       | PT. SHOETOWN LIGUNG INDONESIA     | 22110352 | Roisah -             | 1             |
+| ASSEMBLING           | Grinding                                              | PT. SHOETOWN LIGUNG INDONESIA     | 22110002 | Rini Gina Amalia     | 1             |
+| Annual Training 2022 | Training Asbestos                                     | PT. SHOETOWN LIGUNG INDONESIA     | 21812278 | Mimin Mintarsih      | 1             |
+| CLS Environment      | CLS Enviro in General                                 | PT. SHOETOWN LIGUNG INDONESIA     | 22001013 | Dicky Basri          | 1             |
+| CLS Environment      | CLS TRAINING - E46 - HAZARDOUS WASTE                  | PT. SHOETOWN LIGUNG INDONESIA     | 22202692 | Rudi Rudiana         | 1             |
+| CLS Environment      | CLS TRAINING - E46 - HAZARDOUS WASTE                  | PT. SHOETOWN LIGUNG INDONESIA     | 22205327 | Ahmad Lili Dzazuli   | 1             |
+| CLS Environment      | CLS TRAINING - E46 - HAZARDOUS WASTE                  | PT. SHOETOWN LIGUNG INDONESIA     | 22206278 | Agung Gumelar        | 1             |
+| CLS Environment      | CLS TRAINING - E48 - WASTE WATER                      | PT. SHOETOWN LIGUNG INDONESIA     | 21911255 | Irvania Maulana      | 1             |
+| CLS Environment      | Training Limbah B3                                    | PT. SHOETOWN LIGUNG INDONESIA     | 22109325 | Indra Kuswara        | 1             |
+| CLS Health           | CLS Health in General                                 | PT. SHOETOWN LIGUNG INDONESIA     | 22012006 | Agus Maulana         | 1             |
+| CLS Health           | CLS TRAINING - H28 - OCCUPATIONAL NOISE EXPOSURE      | PT. SHOETOWN KASOKANDEL INDONESIA | 11710043 | Ace Adi Sutisna      | 1             |
+| CLS Health           | CLS TRAINING - H28 - OCCUPATIONAL NOISE EXPOSURE      | PT. SHOETOWN KASOKANDEL INDONESIA | 11808097 | Mamat Rahmat         | 1             |
+| CLS Health           | CLS TRAINING - H33 - MEDICAL SERVICES AND FIRST AID   | PT. SHOETOWN KASOKANDEL INDONESIA | 11411004 | Iing Ismail          | 1             |
+| CLS Health           | CLS TRAINING - H33 - MEDICAL SERVICES AND FIRST AID   | PT. SHOETOWN KASOKANDEL INDONESIA | 11504010 | Dede Rustandi        | 1             |
+| CLS Health           | CLS TRAINING - H33 - MEDICAL SERVICES AND FIRST AID   | PT. SHOETOWN KASOKANDEL INDONESIA | 11611070 | Omang Abdul Rohman   | 1             |
+| CLS Health           | CLS TRAINING - H33 - MEDICAL SERVICES AND FIRST AID   | PT. SHOETOWN KASOKANDEL INDONESIA | 11710015 | Dede Badrudin        | 1             |
+| CLS Health           | CLS TRAINING - H33 - MEDICAL SERVICES AND FIRST AID   | PT. SHOETOWN KASOKANDEL INDONESIA | 11711040 | Beny Hendarman       | 1             |
+| CLS Health           | CLS TRAINING - H35 - BLOOD BORNE PATHOGENS (DISEASES) | PT. SHOETOWN LIGUNG INDONESIA     | 21711053 | Tri Susilo           | 1             |
+| CLS Health           | CLS TRAINING - H35 - BLOOD BORNE PATHOGENS (DISEASES) | PT. SHOETOWN LIGUNG INDONESIA     | 21910360 | Asep Khaerudin       | 1             |
+| CLS Health           | CLS TRAINING - H35 - BLOOD BORNE PATHOGENS (DISEASES) | PT. SHOETOWN LIGUNG INDONESIA     | 22001033 | Ade Pian Herdian     | 1             |
+| CLS Health           | CLS TRAINING - H35 - BLOOD BORNE PATHOGENS (DISEASES) | PT. SHOETOWN LIGUNG INDONESIA     | 22103073 | Raka Arman Tiara     | 1             |
+| CUTTING              | Cutting Collar Lining                                 | PT. SHOETOWN LIGUNG INDONESIA     | 22111472 | Yanuar Firmansyah    | 1             |
+| CUTTING              | Cutting Mudguard                                      | PT. SHOETOWN LIGUNG INDONESIA     | 22111175 | Fariz Sulaeman Jaedi | 1             |
+| CUTTING              | M-Skiving Set                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11912053 | Dadi Muhtadi         | 1             |
+| CUTTING              | Vamp                                                  | PT. SHOETOWN LIGUNG INDONESIA     | 22109519 | Kusnanto Kusnanto    | 1             |
+| General Training     | COMBEN TRAINING JCS                                   | PT. SHOETOWN KASOKANDEL INDONESIA | 11611029 | Fia Oktaviani        | 1             |
+| General Training     | COMBEN TRAINING JCS                                   | PT. SHOETOWN KASOKANDEL INDONESIA | 11801006 | Nenden Dwi Saepuah   | 1             |
+| General Training     | COMBEN TRAINING JCS                                   | PT. SHOETOWN KASOKANDEL INDONESIA | 11801015 | Ega Mandasari        | 1             |
+| General Training     | COMBEN TRAINING JCS                                   | PT. SHOETOWN KASOKANDEL INDONESIA | 11803061 | Yaffi Nur Muhammad F | 1             |
+| General Training     | COMBEN TRAINING JCS                                   | PT. SHOETOWN KASOKANDEL INDONESIA | 11805009 | Heru Susanto         | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11703007 | Yuyung Wahyudin      | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11705015 | Elisna Agustina      | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11708011 | Rizal Miftahul Faoji | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11708030 | Sena Nurmala         | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11909001 | Anggraini -          | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN KASOKANDEL INDONESIA | 11912007 | Heru Nugraha         | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN LIGUNG INDONESIA     | 21803014 | Dewi Wulandari       | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN LIGUNG INDONESIA     | 21903052 | Yudi Apriliyanto     | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN LIGUNG INDONESIA     | 21911172 | Kholili Baihaki      | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN LIGUNG INDONESIA     | 21911444 | Saepul Anwar         | 1             |
+| Training CK 90       | Training Lean                                         | PT. SHOETOWN LIGUNG INDONESIA     | 22004008 | Muhamad Soleh        | 1             |
+| Training ISO         | Training ISO 45001:2018                               | PT. SHOETOWN LIGUNG INDONESIA     | 21712005 | Mela Sari            | 1             |
+
+the result of Visualize in the completed dashboard:
+
+![assess_BI](https://github.com/ageka02/assessment-hard-skill/assets/14159097/ee4ed6b2-c43e-444f-a44d-ef7477bef537)
 
 -------
  
@@ -184,6 +239,11 @@ const styles = StyleSheet.create({
 
 ```
 
+To execute this code and run the app:
+
+- Run the application on a simulator/emulator or a physical device using the appropriate command `react-native run-android`.
+
+  
 ---------
 
 ### Frontend Programming (Html/ CSS/ Bootstrap/ CI) - Intermediate/ Internal Training (HS)
@@ -318,7 +378,23 @@ $sql = "SELECT * FROM users WHERE username = '$username'";
 
 ### Data Visualization using Business Intelligence (Fine Bi or Other) - Expert / External Certifications (HS)
 
-FineBI
+For the datasets is still use the training record data: here is the table [Table](#data-visualization-using-business-intelligence-fine-bi-or-other---intermediate--internal-training-hs)
+
+for the visual **drill** function:
+
+![assess_BI_drill](https://github.com/ageka02/assessment-hard-skill/assets/14159097/4124916f-8c87-4a34-bb6b-d2981c1838ae)
+
+the first is all Training Category, and it can be drilled to factory and then username(person name)
+![assess_BI](https://github.com/ageka02/assessment-hard-skill/assets/14159097/ee4ed6b2-c43e-444f-a44d-ef7477bef537)
+
+drill factory
+
+![assess_BI2](https://github.com/ageka02/assessment-hard-skill/assets/14159097/a8fbdbe1-e032-4ebb-8334-55e4578c1b42)
+
+drill username
+
+![assess_BI3](https://github.com/ageka02/assessment-hard-skill/assets/14159097/c211485e-eadd-4895-b5bf-a7b068d8423f)
+
 
 ------
 
