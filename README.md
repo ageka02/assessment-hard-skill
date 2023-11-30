@@ -327,7 +327,7 @@ To execute this code and run the app:
 
         <div class="form-group">
             <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" placeholder="Enter your comments, bad word is allowed" rows="5" required></textarea>
+            <textarea id="comments" name="comments" placeholder="Enter your comments, bad word isn't allowed" rows="5" required></textarea>
         </div>
 
         <button type="submit">Submit</button>
