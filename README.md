@@ -1,6 +1,6 @@
-# Answer of Assessment Hard Skill
+# Answer of Assessment Hard Skill [Adi Ginanjar K]
 >[!NOTE]
->this repo is just to store my answer from the assessment hard skill
+> This repo is just to store my answer from the assessment hard skill
 
 ## Level 1-2
 
@@ -23,7 +23,7 @@ SELECT * FROM Students;
 ```
 ---------- 
 ### Mobile Programming ( Android/IOS) - Basic (HS)
-I choose React Native Framework to create Mobile Programming task due to the programming language that I've learned and I have experienced with it.
+I chose React Native Framework to create Mobile Programming tasks due to the programming language that I've learned and have experienced with it.
 
 ```javascript
 import React from 'react';
@@ -210,6 +210,8 @@ the result of Visualize in the completed dashboard:
 -------
  
 ### Mobile Programming ( Android/ IOS) - Intermediate / Internal Training (HS)
+
+I chose React Native Framework to create a Mobile Programming task due to the programming language that I've learned and have experienced with it.
 
 ```javascript
 import React from 'react';
